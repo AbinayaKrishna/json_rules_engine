@@ -10,7 +10,8 @@ const affiliateSchema=mongoose.Schema({
     // paid_referals:{type:String,required:true},
     // unpaid_referals:{type:String,required:true},
     refered_by:{type:String,default:null},
-    wallet:{type:Number,default:0}
+    wallet:{type:Number,default:0},
+    earnings_by_referals:{type:Array,default:[]}
     
 },{timestamps:true});
 
