@@ -3,7 +3,7 @@ const userSchema=mongoose.Schema({
     user_id:{type:String,required:true},
     user_name:{type:String,required:true},
     refered_by:{type:String,default:null},
-    orders:{type:Array,default:[]}
+    // orders:{type:Array,default:[]}
     
     
 },{timestamps:true});
