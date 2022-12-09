@@ -11,5 +11,5 @@ app.use(affiliateRoute)
 
 app.get("/", (req, res) => res.send(`Server Running successfully.....!`));
 
-const port = 5000;
+const port = 5001;
 app.listen(port, () => console.log(`server running on port ${port}`));

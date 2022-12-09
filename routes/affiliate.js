@@ -25,6 +25,8 @@ router.post("/register-affiliate", async function (req, res) {
 
 router.post("/order", async function (req, res) {
   try {
+    req.body.referal_id="Developer";
+  console.log(req.body)
     if (req.body.referal_id !== null) {
       const userData = await User.findOne({
         refered_by: req.body.referal_id,
